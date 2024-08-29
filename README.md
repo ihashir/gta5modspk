@@ -22,7 +22,7 @@ Below are some screenshots of the website.
 |-----------|-----------|
 | ![Home](screens/home.png) | ![Mods](screens/mods.png) |
 
-| About Page | Contact Page | Page Example |
+| About Page | Contact Page | Mod Page Demo |
 |------------|--------------|--------------|
 | ![About](screens/about.png) | ![Contact](screens/contact.png) | ![Page](screens/page.png) |
 
@@ -40,3 +40,7 @@ As this project was developed for a specific client, contributions are not expec
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Special Thanks
+
+A special thanks to **Abdul Haseeb** for his collaboration on this project. The main idea behind the website was his, and his efforts in handling the UI/UX and design have been crucial in bringing this project to life.
