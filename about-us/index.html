@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - GTA 5 MODS PAKISTAN</title>
+    <link rel="icon" href="/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/4cd02b4d84.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @font-face {
+        font-family: "futura";
+        src: url("/assets/fonts/futura.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "futura_bold";
+        src: url("/assets/fonts/futura_bold.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      * {
+        margin: 0;
+      }
+      /* body {
+        background: url("/assets/images/about2.png") no-repeat;
+        background-size: 50%;
+        height: 92vh;
+        background-position: right bottom;
+      } */
+      body {
+        height: 100vh;
+      }
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+        background: url("/assets/images/logo.png") no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 13px;
+        background-position: center;
+        background-size: contain;
+        /* border: 1px solid black; */
+      }
+      .logoContainer img {
+        display: none;
+      }
+      .logo {
+        display: inline !important;
+      }
+
+      .social_icons {
+        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 70px;
+        margin-top: 35px;
+        margin-right: 15px;
+        /* border: 1px solid black; */
+        /* height: 150px; */
+      }
+      /* .social_icons img {
+        margin-bottom: 30px;
+      } */
+      .social_icons a {
+        color: black;
+      }
+      i {
+        font-size: 36px;
+        margin-bottom: 20px;
+        transition: all 0.2s;
+      }
+      .fa-instagram {
+        font-size: 42px;
+      }
+      .fa-youtube:hover {
+        color: red;
+      }
+      .fa-discord:hover {
+        color: #5865f2;
+      }
+      .fa-instagram:hover {
+        color: #fb3958;
+      }
+      .content {
+        display: flex;
+        /* margin-top: 0px; */
+        /* width: 50%; */
+        justify-content: space-between;
+      }
+      .content p {
+        width: 50%;
+        line-height: 50px;
+        /* padding-left: 40px; */
+        margin-left: 40px;
+        font-size: 30px;
+        /* font-weight: bolder; */
+        text-transform: uppercase;
+        font-family: "futura_bold";
+        text-align: center;
+      }
+      .content img {
+        width: 50%;
+        height: 100%;
+        z-index: -999;
+        margin-top: 60px;
+      }
+      .logoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .mob_social_icons {
+        display: none;
+        /* justify-content: center; */
+        margin-right: 30px;
+      }
+      .social_icon {
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        background-color: rgb(28, 28, 28);
+        /* color: white; */
+        height: 75px;
+
+        width: 50vw;
+        text-align: center;
+        /* align-items: center; */
+        padding: 0;
+        padding-right: 10px;
+        justify-content: space-evenly;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      ul a {
+        font-size: 23px;
+        /* width: 500px; */
+        display: flex;
+        align-items: center;
+
+        /* padding: 30px; */
+        /* padding: 22px 20px; */
+        text-transform: uppercase;
+        font-family: "futura";
+        text-decoration: none;
+        color: white;
+        vertical-align: middle;
+      }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        /* margin: 5px 10px; */
+        display: flex;
+        align-items: center;
+      }
+
+      li > a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        margin: 0 20px;
+        transition: all 0.2s;
+      }
+
+      li > a::after {
+        position: relative;
+        content: "";
+        display: block;
+        margin: auto;
+        height: 5px;
+        border-radius: 10px;
+        width: 0;
+        top: 5px;
+
+        transition: all 0.2s;
+      }
+      li > a:hover {
+        color: rgb(38, 234, 91);
+      }
+      li > a:hover::after {
+        width: 100%;
+        /* color: green; */
+        background: rgb(38, 234, 91) !important;
+      }
+      li > a.active-nav::after {
+        width: 100%;
+        /* color: green; */
+        background: white;
+      }
+      .content a {
+        /* text-decoration: none; */
+        color: rgb(25, 160, 61);
+        transition: all 0.2s;
+      }
+      .content a:hover {
+        color: rgb(24, 117, 49);
+      }
+      @media only screen and (max-width: 1150px) {
+        ul {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        /* .container {
+          flex-direction: column;
+        } */
+        ul a {
+          font-size: 18px;
+        }
+        .content p {
+          font-size: 25px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        ul {
+          width: 100vw;
+          padding: 0;
+        }
+        .container {
+          flex-direction: column;
+        }
+        ul a {
+          font-size: 15px;
+          margin: 0 10px;
+        }
+        .logoContainer img {
+          display: inline;
+        }
+        .social_icons {
+          display: none;
+        }
+        .content {
+          text-align: center;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+        }
+        .content p {
+          font-size: 17px;
+          margin: 0;
+          width: 90%;
+          line-height: 43px;
+        }
+        .content img {
+          /* display: none; */
+          width: 100%;
+        }
+        .mob_social_icons {
+          display: flex;
+        }
+        .social_icons {
+          display: none;
+        }
+        i {
+          font-size: 30px !important;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header_icon">
+        <div class="logoContainer">
+          <a href="/"
+            ><img class="logo" src="/assets/images/logo.png" alt=""
+          /></a>
+          <div class="mob_social_icons">
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://www.instagram.com/gtavmodspakistan/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://www.youtube.com/channel/UC0pfnolmvZxTwX7BDIrKS6w"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://discord.gg/awCCtwmdFB"
+              ><i class="fab fa-discord"></i
+            ></a>
+          </div>
+        </div>
+        <div class="header">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/mods">Mods</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
+            <li><a class="active-nav" href="/about-us">about us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="social_icons">
+        <a target="_blank" href="https://www.instagram.com/gtavmodspakistan/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UC0pfnolmvZxTwX7BDIrKS6w"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a target="_blank" href="https://discord.gg/awCCtwmdFB"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </div>
+    <div class="content">
+      <p>
+        Hi ! This site is Officially Lanched By the@★│𝐅𝐎𝐔𝐍𝐃𝐄𝐑 (<a
+          href="https://www.instagram.com/pakistanithegamer"
+          >Pakistani the Gamer</a
+        >
+        &<a href="https://www.instagram.com/abdul_haseeb681/">
+          Abdul Haseeb Gaming</a
+        >). You can download mind blowing Pakistani GTA V Mods. YES ! These mods
+        are completely free. They are created by only Pakistani creators. You
+        don’t need to pay for these mods . All these mods belong to their
+        respective owner. No one has the right to re upload these mods on any
+        website without permission.
+      </p>
+      <img src="/assets/images/about.jpg" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mods - GTA 5 MODS PAKISTAN</title>
+    <link rel="icon" href="/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/4cd02b4d84.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @font-face {
+        font-family: "futura";
+        src: url("/assets/fonts/futura.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      * {
+        margin: 0;
+      }
+      /* body {
+        background: url("/assets/images/about2.png") no-repeat;
+        background-size: 50%;
+        height: 92vh;
+        background-position: right bottom;
+      } */
+      body {
+        /* height: 100vh; */
+
+        background: url("/assets/images/mods.jpg") no-repeat center;
+        background-color: #c2c4c3;
+        background-size: 55%;
+        background-position: right 70px;
+
+        /* width: 600px; */
+
+        overflow: visible;
+        animation-name: animate;
+        animation-duration: 1s;
+        /* height: 250px; */
+      }
+      @keyframes animate {
+        from {
+          background-position: 120vw 70px;
+        }
+        to {
+          background-position: right 70px;
+        }
+      }
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .logo {
+        background: url("/assets/images/logo.png") no-repeat;
+        width: 50px;
+        height: 50px;
+        margin: 13px;
+        background-position: center;
+        background-size: contain;
+        /* border: 1px solid black; */
+      }
+      .logoContainer img {
+        display: none;
+      }
+      .logo {
+        display: inline !important;
+      }
+
+      .social_icons {
+        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 70px;
+        margin-top: 35px;
+        margin-right: 15px;
+        /* border: 1px solid black; */
+        /* height: 150px; */
+      }
+      /* .social_icons img {
+        margin-bottom: 30px;
+      } */
+      .social_icons a {
+        color: black;
+      }
+      i {
+        font-size: 36px;
+        margin-bottom: 20px;
+        transition: all 0.2s;
+      }
+      .fa-instagram {
+        font-size: 42px;
+      }
+      .fa-youtube:hover {
+        color: red;
+      }
+      .fa-discord:hover {
+        color: #5865f2;
+      }
+      .fa-instagram:hover {
+        color: #fb3958;
+      }
+
+      .logoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .mob_social_icons {
+        display: none;
+        /* justify-content: center; */
+        margin-right: 30px;
+      }
+      .social_icon {
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        background-color: #1c1c1c;
+        /* color: white; */
+        height: 75px;
+
+        width: 50vw;
+        text-align: center;
+        /* align-items: center; */
+        padding: 0;
+        padding-right: 10px;
+        justify-content: space-evenly;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      ul a {
+        font-size: 23px;
+        /* width: 500px; */
+        display: flex;
+        align-items: center;
+
+        /* padding: 30px; */
+        /* padding: 22px 20px; */
+        text-transform: uppercase;
+        font-family: "futura";
+        text-decoration: none;
+        color: white;
+        vertical-align: middle;
+      }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        /* margin: 5px 10px; */
+        display: flex;
+        align-items: center;
+      }
+
+      li > a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        margin: 0 20px;
+        transition: all 0.2s;
+      }
+
+      li > a::after {
+        position: relative;
+        content: "";
+        display: block;
+        margin: auto;
+        height: 5px;
+        border-radius: 10px;
+        width: 0;
+        top: 5px;
+
+        transition: all 0.2s;
+      }
+      li > a:hover {
+        color: rgb(38, 234, 91);
+      }
+      li > a:hover::after {
+        width: 100%;
+        /* color: green; */
+        background: rgb(38, 234, 91) !important;
+      }
+      li > a.active-nav::after {
+        width: 100%;
+        /* color: green; */
+        background: white;
+      }
+      .content {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .mod {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 370px;
+        height: 300px;
+        border-radius: 15px;
+        background-color: #1c1c1c;
+        margin-bottom: 60px;
+        justify-content: space-between;
+        color: white;
+        transition: all 0.2s;
+        box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.377);
+      }
+      .mod:hover {
+        background-color: white;
+        color: #1c1c1c !important;
+        /* box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.377); */
+      }
+      .mod p {
+        text-decoration: none;
+        text-transform: uppercase;
+        /* color: white; */
+        font-weight: bold;
+        font-size: 30px;
+        font-family: sans-serif;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .mod .mod_image {
+        width: 90%;
+        height: 180px;
+        background: url("/assets/images/hondaCity.jpg") no-repeat center;
+        background-size: 100%;
+
+        border-radius: 30px;
+        margin-bottom: 30px;
+      }
+      @media only screen and (max-width: 1150px) {
+        ul {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 850px) {
+        /* .container {
+          flex-direction: column;
+        } */
+        ul a {
+          font-size: 20px;
+        }
+        .mod {
+          width: 350px;
+          height: 280px;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        /* .container {
+          flex-direction: column;
+        } */
+
+        .mod {
+          max-width: 320px;
+          width: 90%;
+          height: 260px;
+        }
+        .mod .mod_image {
+          /* width: 300px; */
+          height: 160px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        body {
+          background-image: none;
+        }
+        .content {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        ul {
+          width: 100vw;
+          padding: 0;
+        }
+        .container {
+          flex-direction: column;
+        }
+        ul a {
+          font-size: 18px;
+          margin: 0 10px;
+        }
+        .logoContainer img {
+          display: inline;
+        }
+        .mob_social_icons {
+          display: flex;
+        }
+        .social_icons {
+          display: none;
+        }
+        i {
+          font-size: 30px !important;
+          color: black;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        ul a {
+          font-size: 15px;
+        }
+      }
+      /* .mod_image {
+        background: url("/assets/images/mods.png") no-repeat center;
+        background-size: 100%;
+
+        width: 600px;
+
+        overflow: visible;
+        height: 250px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header_icon">
+        <div class="logoContainer">
+          <a href="/"
+            ><img class="logo" src="/assets/images/logo.png" alt=""
+          /></a>
+          <div class="mob_social_icons">
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://www.instagram.com/gtavmodspakistan/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://www.youtube.com/channel/UC0pfnolmvZxTwX7BDIrKS6w"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              target="_blank"
+              class="social_icon"
+              href="https://discord.gg/awCCtwmdFB"
+              ><i class="fab fa-discord"></i
+            ></a>
+          </div>
+        </div>
+        <div class="header">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a class="active-nav" href="/mods">Mods</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
+            <li><a href="/about-us">about us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="mod_image"></div> -->
+      <!-- <img id="mod_image" src="/assets/images/mods.png" alt="" /> -->
+      <div class="social_icons">
+        <a target="_blank" href="https://www.instagram.com/gtavmodspakistan/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UC0pfnolmvZxTwX7BDIrKS6w"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a target="_blank" href="https://discord.gg/awCCtwmdFB"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </div>
+    <div class="content">
+      <a class="mod" href="/mods/honda-city">
+        <p>Honda city</p>
+        <div class="mod_image"></div>
+      </a>
+
+      <a class="mod" href="/mods/honda-city">
+        <p>Honda city</p>
+        <div class="mod_image"></div>
+      </a>
+      <a class="mod" href="/mods/honda-city">
+        <p>Honda city 2022 By ptg</p>
+        <div class="mod_image"></div>
+      </a>
+      <a class="mod" href="/mods/honda-city">
+        <p>Honda city</p>
+        <div class="mod_image"></div>
+      </a>
+      <!-- <a class="mod" href="#">
+                <p>Honda city</p>
+                <div class="mod_image"></div>
+              </a> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4cd02b4d84.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Honda City - GTA 5 MODS PAKISTAN</title>
+    <link rel="icon" href="/favicon.png" />
+    <style>
+      @font-face {
+        font-family: "futura_bold";
+        src: url("../../assets/fonts/futura_bold.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      * {
+        margin: 0;
+      }
+      body {
+        background: url("../../assets/images/modPage.jpg") no-repeat fixed;
+        background-color: #592925;
+        background-size: cover;
+        background-position: center;
+        overflow-y: auto;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+
+        /* align-items: center; */
+      }
+      #logo {
+        position: absolute;
+        margin: 5px 13px;
+        background: url(../../assets/images/logo.png) no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+      }
+      .content {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .content h1 {
+        text-transform: uppercase;
+        text-shadow: -8px 0px 3px black;
+        font-size: 70px;
+        font-family: "futura_bold";
+        font-weight: bolder;
+        text-align: center;
+      }
+      .content p {
+        font-size: 17px;
+        text-align: center;
+        line-height: 40px;
+        width: 70%;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 0px 2px 3px rgb(0, 0, 0);
+      }
+      .social_icons {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-right: 10px;
+        font-size: 37px;
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .social_icons a {
+        margin-bottom: 27px;
+        color: black;
+      }
+      .social_icons i {
+        transition: all 0.2s;
+      }
+      .fa-instagram {
+        font-size: 44px;
+      }
+      .fa-youtube:hover {
+        color: red;
+      }
+      .fa-discord:hover {
+        color: #5865f2;
+      }
+      .fa-instagram:hover {
+        color: #fb3958;
+      }
+      .mySlides1 {
+        display: none;
+
+        width: 100%;
+        height: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin: 0; */
+        transition: all 0.3s;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.308);
+        border-radius: 20px;
+        width: 650px;
+        height: 350px;
+        position: relative;
+        /* margin: auto; */
+        transition: all 0.3s;
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        transition: 0.3s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a grey background color */
+      .prev:hover,
+      .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+      }
+      .fade {
+        /* position: relative; */
+        /* right: -9999px; */
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 0.4s;
+        animation-name: fade;
+        animation-duration: 0.4s;
+      }
+      .content p a {
+        text-decoration: none;
+        color: rgb(38, 234, 91);
+        transition: all 0.2s;
+      }
+      .content p a:hover {
+        color: rgb(27, 153, 61);
+      }
+      .slideshow-container img {
+        display: none;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: -9999px;
+      }
+      .download_button {
+        display: flex;
+        align-items: center;
+        /* text-align: center; */
+        justify-content: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgb(27, 175, 67);
+        color: white;
+        text-decoration: none;
+        transition: all 0.2s;
+        /* box-shadow: -2px 1px 3px rgba(0, 0, 0, 0.459); */
+      }
+      .download_button:hover {
+        color: rgb(27, 175, 67);
+        background-color: white;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .content h1 {
+          font-size: 50px;
+        }
+        .slideshow-container {
+          width: 600px;
+          height: 300px;
+        }
+        .social_icons i {
+          font-size: 30px;
+        }
+        .social_icons a {
+          margin-bottom: 15px;
+        }
+        .fa-instagram {
+          font-size: 36px !important;
+        }
+      }
+      @media only screen and (max-width: 720px) {
+        .container {
+          flex-direction: column;
+          /* align-items: center; */
+        }
+        .content {
+          margin-top: 20px;
+        }
+        .content h1 {
+          font-size: 40px;
+        }
+        .content p {
+          width: 90%;
+        }
+        .slideshow-container {
+          max-width: 500px;
+          width: 90%;
+          height: 200px;
+        }
+        .social_icons {
+          position: relative;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 50%;
+          align-self: center;
+        }
+        .social_icons a {
+          color: white;
+        }
+        .social_icons i {
+          font-size: 30px;
+        }
+        .social_icons a {
+          margin-bottom: 15px;
+        }
+        .fa-instagram {
+          font-size: 32px !important;
+        }
+        #logo {
+          position: relative;
+          margin-top: 20px;
+          width: 50px;
+          height: 50px;
+          align-self: flex-start !important;
+        }
+        .prev,
+        .next {
+          font-size: 40px;
+          margin-top: -40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/"><div id="logo"></div></a>
+
+      <div class="content">
+        <h1>Honda city 2022</h1>
+        <div class="slideshow-container">
+          
+
+          <div
+            class="mySlides1 fade"
+            style="background-image: url('../../assets/images/hondaCity.jpg')"
+          ></div>
+          <img src="../../assets/images/hondaCity.jpg" alt="" />
+
+          <div
+            class="mySlides1 fade"
+            style="background-image: url('../../assets/images/modPage.jpg')"
+          ></div>
+          <img src="../../assets/images/modPage.jpg" alt="" />
+
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+          atque numquam alias voluptatem aspernatur dolores cumque voluptates
+          repudiandae iste assumenda provident quae delectus libero, eveniet
+          iusto hic. Numquam, earum aperiam. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Pariatur atque numquam alias voluptatem
+          aspernatur dolores cumque voluptates repudiandae iste assumenda
+          provident quae delectus libero, eveniet iusto hic. Numquam, earum
+          aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Pariatur atque numquam alias voluptatem aspernatur dolores cumque
+          voluptates repudiandae iste assumenda provident quae delectus libero,
+          eveniet iusto hic. Numquam, earum aperiam.Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Pariatur atque numquam alias voluptatem
+          aspernatur dolores cumque voluptates repudiandae iste assumenda
+          provident quae delectus libero, eveniet iusto hic. Numquam, earum
+          aperiam.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Pariatur atque numquam alias voluptatem aspernatur dolores cumque
+          voluptates repudiandae iste <a href="#">assumenda</a>
+          delectus libero, eveniet iusto hic. Numquam, earum aperiam.
+        </p>
+        <a href="#" class="download_button">DOWNLOAD</a>
+      </div>
+      <div class="social_icons">
+        <a target="_blank" href="https://www.instagram.com/gtavmodspakistan/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UC0pfnolmvZxTwX7BDIrKS6w"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a target="_blank" href="https://discord.gg/awCCtwmdFB"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </div>
+    <script>
+      var slideIndex = [1, 1];
+      var slideId = ["mySlides1"];
+      showSlides(1, 0);
+
+      function plusSlides(n, no) {
+        showSlides((slideIndex[no] += n), no);
+      }
+
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+          slideIndex[no] = 1;
+        }
+        if (n < 1) {
+          slideIndex[no] = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+      }
+      const scrollbarVisible = (element) => {
+        return element.scrollHeight > element.clientHeight;
+      };
+      var res = scrollbarVisible(document.querySelector("html"));
+      if (res == false) {
+        document.querySelector("body").style.height = "100vh";
+      }
+      document.onload(function () {
+        document.querySelector(".slideshow-container img").style.display =
+          "inline";
+      });
+    </script>
+  </body>
+</html>
