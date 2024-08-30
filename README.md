@@ -37,10 +37,10 @@ Below are some screenshots of the website.
 
 As this project was developed for a specific client, contributions are not expected.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Special Thanks
 
 A special thanks to **Abdul Haseeb** for his collaboration on this project. The main idea behind the website was his, and his efforts in handling the UI/UX and design have been crucial in bringing this project to life.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
